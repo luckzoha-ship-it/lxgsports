@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PartnerModal from './components/PartnerModal';
+import ScrollToTop from './components/ScrollToTop';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-dark-bg text-gray-100 font-sans antialiased selection:bg-brand-red selection:text-white">
         {/* Navigation */}
         <Navbar onOpenPartnerModal={openPartnerModal} />
